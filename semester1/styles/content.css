@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Myeongjo:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: agbalumo;
+}
+
+/* header section*/
+
+header{
+    background: linear-gradient(to bottom, blue,white);
+}
+header h2{
+    padding: 2px;
+}
+
+.nav-link::after{
+content:'';
+width: 0%;
+height: 2px;
+position: relative;
+display: block;
+background-color: orange;
+transition: 1s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+
+/* about */
+/* .whole{
+    display: flex;
+} */
+.aboutContent{
+    float: left;
+    width: 70%;
+}
+.aboutContent h2{
+color: orange;
+
+text-wrap: wrap;
+}
+
+.side1{
+    float: right;
+    width: 20%;
+}
+.side1 h1{
+    color: orange;
+}
+.side1 h1 i{
+    color: blue;
+}
+
+.aboutContent p{
+    
+}
+.abt-img{
+    overflow: hidden;
+}
+.abt-cont
+{
+    margin-top: 20px;
+}
+.abt-cont h6{
+    color: orange;
+}
+.abt-cont li{
+    color: blue;
+}
+/* footer */
+footer{
+    background:linear-gradient(to bottom, blue,white);
+    clear: both;
+}
+table{
+   
+    width: 100%;
+    
+}
+
+
+/* world content */
+
+.cont-page{
+    float: left;
+    width: 70%;
+
+}
+.sidepage{
+    float: right;
+    width: 20%;
+}
+.img-para{
+   width: 100%;
+   background-color: black;
+}
+.img-para img{
+    width: 100%;
+}
+.img-para img:hover{
+    /* transform: scaleX(1.1); */
+}
+.img-para p{
+    padding: 10px;
+    color: orange;
+}
+.cont-page h3{
+    border-bottom: 1px solid orange;
+}
+.flexdiv{
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid orange;
+    column-gap: 20px;
+}
+.flexdiv div span{
+    color: gray;
+}
+
+
+@media screen and (max-width: 700px){
+    .aboutContent, .side1{
+        display: block;
+        width: 100%;
+    }
+    .cont-page ,.sidepage{
+        width: 100%;
+        display: block;
+    }
+    .flexdiv{
+        display: block;
+    }
+    
+}

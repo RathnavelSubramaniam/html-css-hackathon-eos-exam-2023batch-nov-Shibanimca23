@@ -1,0 +1,127 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Myeongjo:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: agbalumo;
+}
+
+/* header section*/
+
+header{
+    background: linear-gradient(to bottom, blue,white);
+}
+header h2{
+    padding: 2px;
+}
+
+.nav-link::after{
+content:'';
+width: 0%;
+height: 2px;
+position: relative;
+display: block;
+background-color: orange;
+transition: 1s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-link:focus{
+    background-color: orange;
+}
+
+/* content section */
+.homeContent{
+    height: 120vh;
+}
+.side1{
+    float: left;
+    width: 20%;
+    /* border: 1px solid black; */
+    height: 100%;
+}
+.main{
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+    /* border: 1px solid black; */
+    height: 100%;
+}
+/* .marqueediv{
+    height: 20vh;
+    z-index: 0;
+} */
+.classdiv{
+display: flex;
+margin-top: 20px;
+}
+.side2{
+    float: right;
+    width: 20%;
+    /* border: 1px solid black; */
+    height: 100%;
+    
+}
+.side1 h3{
+    color: blue;
+}
+.divimg{
+    width: 100%;
+    overflow: hidden;
+}
+.divimg img{
+    width: 70px;
+}
+.side2 h1{
+    color: blue;
+}
+
+li{
+    list-style-type: none;
+}
+/* footer */
+footer{
+    clear: both;
+    background:linear-gradient(to bottom, blue,white);
+    z-index: 1000;
+/* margin-top: 2200px; */
+    
+}
+
+@media screen and (max-width: 700px){
+    .homeContent{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+       
+    }
+    .side1, .side2 , .main{
+        display: block;
+        width: 100%;
+    }
+    /* .main{
+margin-top: 100px;
+margin-left: 0;
+    }
+    footer{
+        margin-top: 2500px;
+       position: relative;
+       bottom: 0;
+    } */
+    .classdiv{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .side2{
+        
+    } */
+}
+@media screen and (max-width: 900px){
+
+}
